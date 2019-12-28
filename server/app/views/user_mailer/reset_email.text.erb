@@ -1,0 +1,6 @@
+Hello, <%= @user.username %>
+============================
+
+Click <%= link_to "Here", "http://localhost:3001/reset/#{@user.reset_token}" %> to reset your password
+
+If you didn't request for a password reset in Blog ignore this message
