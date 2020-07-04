@@ -1,9 +1,7 @@
 import axios from "axios";
 
-const mainUrl = "http://localhost:3000";
-
 function post(endpoint, body) {
-  return axios.post(mainUrl + endpoint, body);
+  return axios.post(endpoint, body);
 }
 
 export async function register(email, username, password, passwordRepeat) {

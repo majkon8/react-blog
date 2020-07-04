@@ -1,0 +1,53 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Mikolaj\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js init
+
+PATH: 
+  C:\app\Mikolaj\product\18.0.0\dbhomeXE\bin;C:\C__BUI~1\Bin;C:\C__BUI~1\Projects\Bpl;C:\Program Files (x86)\Lenovo\FusionEngine;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Lenovo\Motion Control\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\System32\OpenSSH\;C:\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\MongoDB\Server\4.0\bin;C:\sqlite;;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Ruby25-x64\bin;C:\Users\Mikolaj\Desktop\python\Scripts\;C:\Users\Mikolaj\Desktop\python\;C:\Anakonda;C:\Anakonda\Scripts;C:\Anakonda\Library\bin;C:\Users\Mikolaj\AppData\Local\Microsoft\WindowsApps;C:\New folder\PyCharm Community Edition 2018.3.4\bin;;C:\Microsoft VS Code\bin;C:\Users\Mikolaj\AppData\Local\Programs\MiKTeX 2.9\miktex\bin\x64\;C:\Users\Mikolaj\AppData\Roaming\npm;C:\Program Files\heroku\bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  10.15.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (C:\Users\Mikolaj\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:137008:13)
+      at Interface.emit (events.js:189:13)
+      at Interface._ttyWrite (readline.js:783:16)
+      at ReadStream.onkeypress (readline.js:168:10)
+      at ReadStream.emit (events.js:189:13)
+      at emitKeys (internal/readline.js:424:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1022:36)
+      at ReadStream.emit (events.js:189:13)
+      at addChunk (_stream_readable.js:284:12)
+
+npm manifest: 
+  {
+    "name": "server",
+    "version": "1.0.0",
+    "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+    "main": "index.js",
+    "directories": {
+      "lib": "lib",
+      "test": "test"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "cd client && npm install && npm run build & cd ..",
+      "deploy": "cp -a client/build/.public/",
+      "postinstall": "npm run build && npm deploy && echo 'Client built!'"
+    },
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
