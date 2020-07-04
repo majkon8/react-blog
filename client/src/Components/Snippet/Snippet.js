@@ -93,13 +93,13 @@ const Snippet = ({
 }) => {
   return (
     <Container>
-      <Article href={`http://localhost:3001/article/${articleId}`}>
+      <Article href={`/article/${articleId}`}>
         <Title>{title}</Title>
         <Description>{description}</Description>
       </Article>
       <Summary>
         Posted by{" "}
-        <AdminAnchor href="http://localhost:3001/contact">{author}</AdminAnchor>{" "}
+        <AdminAnchor href="/contact">{author}</AdminAnchor>{" "}
         on {date}
       </Summary>
       {isAdmin && (

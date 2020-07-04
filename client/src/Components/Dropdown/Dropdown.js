@@ -38,13 +38,13 @@ const Ul = styled.ul`
 const Dropdown = ({ logOut, authToken, hidden, isAdmin }) => {
   return (
     <Ul hidden={hidden} isAdmin={isAdmin}>
-      {isAdmin && <a href="http://localhost:3001/new">new post</a>}
-      <a href="http://localhost:3001">home</a>
-      <a href="http://localhost:3001/contact">contact</a>
+      {isAdmin && <a href="/new">new post</a>}
+      <a href="/">home</a>
+      <a href="/contact">contact</a>
       {authToken ? (
         <a onClick={logOut}>log out</a>
       ) : (
-        <a href="http://localhost:3001/login">log in</a>
+        <a href="/login">log in</a>
       )}
     </Ul>
   );

@@ -76,7 +76,7 @@ const ArticleHeader = ({ title, description, author, date, image }) => {
         <Description>{description}</Description>
         <Summary>
           Posted by{" "}
-          <AdminAnchor href="http://localhost:3001/contact">
+          <AdminAnchor href="/contact">
             {author}
           </AdminAnchor>{" "}
           on {date}

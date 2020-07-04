@@ -60,7 +60,7 @@ const Reset = props => {
       {redirect && <Redirect to="/login" />}
       {resetToken !== null && (
         <Container>
-          <StyledA href="http://localhost:3001/login">Log in</StyledA>
+          <StyledA href="/login">Log in</StyledA>
           <SuccessMessage>
             <div>{successMessage}</div>
           </SuccessMessage>

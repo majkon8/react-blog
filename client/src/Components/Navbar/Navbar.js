@@ -116,21 +116,21 @@ const Navbar = ({ authToken, logOut, isAdmin }) => {
   return (
     <>
       <Container hide={hide} offset={offset} width={window.innerWidth}>
-        <Title href="http://localhost:3001">Clean Blog</Title>
+        <Title href="/">Clean Blog</Title>
         <List>
           <StyledButton variant="outlined" onClick={toggleDropdown}>
             <span>menu</span> <StyledBars />
           </StyledButton>
           <ListInner>
-            {isAdmin && <a href="http://localhost:3001/new">new post</a>}
-            <a href="http://localhost:3001">home</a>
-            <a href="http://localhost:3001/contact">contact</a>
+            {isAdmin && <a href="/new">new post</a>}
+            <a href="/">home</a>
+            <a href="/contact">contact</a>
             {authToken ? (
-              <a href="http://localhost:3001/login" onClick={logOut}>
+              <a href="/login" onClick={logOut}>
                 log out
               </a>
             ) : (
-              <a href="http://localhost:3001/login">log in</a>
+              <a href="/login">log in</a>
             )}
           </ListInner>
         </List>
