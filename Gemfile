@@ -14,8 +14,8 @@ group :production do
     gem 'pg'
 end
 # AWS Active Storage
-gem "aws-sdk-s3", require: false
-gem 'mini_magick', '~> 4.8'
+# gem "aws-sdk-s3", require: false
+# gem 'mini_magick', '~> 4.8'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
