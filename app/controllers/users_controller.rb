@@ -48,7 +48,7 @@ class UsersController < ApplicationController
       @user = User.new(
         email: params[:email],
         username: params[:username],
-        admin: true
+        admin: false
       )
       @user.password = params[:password]
       if @user.save
