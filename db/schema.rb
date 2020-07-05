@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_06_102259) do
+ActiveRecord::Schema.define(version: 2020_07_05_112245) do
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 2019_08_06_102259) do
     t.boolean "admin"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "authenctication_token", limit: 30
+    t.string "authenctication_token"
     t.string "email"
     t.string "password_hash"
     t.string "username"
