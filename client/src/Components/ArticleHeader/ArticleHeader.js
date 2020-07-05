@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  background-image: ${props => `url(${props.image})`};
   background-size: cover;
   background-position: 50%;
   padding: 150px 0;
@@ -64,22 +63,13 @@ const AdminAnchor = styled.a`
 
 const ArticleHeader = ({ title, description, author, date, image }) => {
   return (
-    <Container
-      image={
-        image
-          ? image
-          : "https://www.free-css.com/assets/files/free-css-templates/preview/page236/clean-blog/assets/img/home-bg.jpg"
-      }
-    >
+    <Container style={{ backgroundImage: `url(${image})` }}>
       <Meta>
         <Title>{title}</Title>
         <Description>{description}</Description>
         <Summary>
-          Posted by{" "}
-          <AdminAnchor href="/contact">
-            {author}
-          </AdminAnchor>{" "}
-          on {date}
+          Posted by <AdminAnchor href="/contact">{author}</AdminAnchor> on{" "}
+          {date}
         </Summary>
       </Meta>
     </Container>
