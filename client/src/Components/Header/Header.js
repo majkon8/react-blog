@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  background-image: url("https://www.free-css.com/assets/files/free-css-templates/preview/page236/clean-blog/assets/img/home-bg.jpg");
+  background-image: url("https://i.imgur.com/I0Gb2lW.jpg");
   background-size: cover;
   background-position: 50%;
   color: white;

@@ -68,7 +68,7 @@ const ArticleHeader = ({ title, description, author, date, image }) => {
       image={
         image
           ? image
-          : "https://www.free-css.com/assets/files/free-css-templates/preview/page236/clean-blog/assets/img/home-bg.jpg"
+          : "https://i.imgur.com/I0Gb2lW.jpg"
       }
     >
       <Meta>
