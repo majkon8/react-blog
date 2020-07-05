@@ -17,7 +17,7 @@ export async function login(email, password) {
   return post("/login", {
     email,
     password
-  });
+  })
 }
 
 export async function forgot(email) {
