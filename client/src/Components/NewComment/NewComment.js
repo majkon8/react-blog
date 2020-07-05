@@ -20,7 +20,7 @@ const StyledButton = styled(Button)`
 const CharactersLeft = styled.div`
   margin-left: 10px;
   color: ${props =>
-    props.commentContent.length < 20 ? "rgb(250, 70, 60)" : "rgb(0, 133, 161)"};
+    props.commentContent.length > 1980 ? "rgb(250, 70, 60)" : "rgb(0, 133, 161)"};
 `;
 
 const NewComment = ({
@@ -77,9 +77,7 @@ const NewComment = ({
   return (
     <Container>
       <CharactersLeft commentContent={commentContent}>
-        {commentContent.length < 20
-          ? 20 - commentContent.length
-          : 2020 - commentContent.length}{" "}
+        {2000 - commentContent.length}{" "}
         characters left
       </CharactersLeft>
       <CssTextField

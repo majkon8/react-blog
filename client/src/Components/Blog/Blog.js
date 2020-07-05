@@ -98,7 +98,7 @@ const Blog = ({ isAdmin }) => {
   const [articleIdToDelete, setArticleIdToDelete] = useState();
 
   useEffect(() => {
-    getAllArticles().then(result => setArticles(result.data));
+    getAllArticles().then(result => {setArticles(result.data.reverse())});
   }, []);
 
   useEffect(() => {
